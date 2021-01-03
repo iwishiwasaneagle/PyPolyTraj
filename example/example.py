@@ -11,7 +11,7 @@ if __name__ == "__main__":
     t = 0 
 
     wps = np.array([[0,0],[5,0],[5,5],[0,5], [0,0]])
-    Ts = np.array([5,2,10,2,5])
+    Ts = np.array([5,2,10,2,5]).astype(float)
 
     for wp_old, wp_next, T in zip(wps[:-1], wps[1:], Ts):
 
